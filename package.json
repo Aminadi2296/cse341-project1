@@ -1,0 +1,19 @@
+{
+  "name": "cse341-project1",
+  "version": "1.0.0",
+  "description": "contact project CSE 341",
+  "main": "server.js",
+  "scripts": {
+    "test": " "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aminadi2296/cse341-project1.git"
+  },
+  "author": "Moroni Perez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aminadi2296/cse341-project1/issues"
+  },
+  "homepage": "https://github.com/Aminadi2296/cse341-project1#readme"
+}

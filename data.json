@@ -1,0 +1,37 @@
+[
+    {
+      "firstName": "Lewis",
+      "lastName": "Hamilton",
+      "email": "lewishamilton@f1.com",
+      "favoriteColor": "Purple",
+      "birthday": "1985-01-07"
+    },
+    {
+      "firstName": "Max",
+      "lastName": "Verstappen",
+      "email": "maxverstappen@f1.com",
+      "favoriteColor": "Orange",
+      "birthday": "1997-09-30"
+    },
+    {
+      "firstName": "Charles",
+      "lastName": "Leclerc",
+      "email": "lordperceval@f1.com",
+      "favoriteColor": "Green",
+      "birthday": "1987-07-03"
+    },
+    {
+      "firstName": "Carlos",
+      "lastName": "Sainz",
+      "email": "carlossainzjr@f1.com",
+      "favoriteColor": "Red",
+      "birthday": "1989-07-01"
+    },
+    {
+      "firstName": "Fernando",
+      "lastName": "Alonso",
+      "email": "fernandoalonso@f1.com",
+      "favoriteColor": "Blue",
+      "birthday": "1981-07-29"
+    }
+  ]

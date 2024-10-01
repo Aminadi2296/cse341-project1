@@ -7,13 +7,18 @@ const app = express();
 
 const port = process.env.PORT || 3000;
 
+const swaggerUi = require('swagger-ui-express');
+const swaggerDocument = require('./swagger.json');
+
+
 app.use(bodyParser.json());
 
-// app.use(cors({
-//     origin: '*',
-//     methods: ['GET', 'POST', 'DELETE', 'UPDATE', 'PUT', 'PATCH'],
-//     allowedHeaders: 'Origin, X-Requested-With, Content-Type, Accept, Z-Key'
-// }));
+app.use(cors({
+    origin: '*',
+    methods: ['GET', 'POST', 'DELETE', 'UPDATE', 'PUT', 'PATCH'],
+    allowedHeaders: 'Origin, X-Requested-With, Content-Type, Accept, Z-Key'
+}));
+
 app.use((req, res, next)=>{
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader(
@@ -24,6 +29,10 @@ app.use((req, res, next)=>{
     next();
 });
 
+
+// swagger setup
+app.use('/api-docs', swaggerUi.serve);
+app.get('/api-docs', swaggerUi.setup(swaggerDocument));
 
 
 app.use('/', require('./routes'));

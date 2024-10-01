@@ -1,13 +1,16 @@
+var express = require('express');
 const router = require('express').Router();
 
 const controller = require('../controllers/index');
 // const {getData} =require ('/controller/index')
 
-router.use('/', require('./swagger'));
+router.get('/', function(req, res, next) {
+    res.redirect('/api-docs')
+  });
 
 router.get('/', (req, res)=> {
     // swagger.tags=['Hello World']
-    res.send('Try adding /contacts to the path ;)')
+    res.send('/contacts to the path ;)')
     });
 
 router.get('/contacts', controller.getData);

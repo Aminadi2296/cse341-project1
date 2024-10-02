@@ -4,9 +4,7 @@ const router = require('express').Router();
 const controller = require('../controllers/index');
 // const {getData} =require ('/controller/index')
 
-router.get('/', function(req, res, next) {
-    res.redirect('/api-docs')
-  });
+router.use('/',require( './swagger'));
 
 router.get('/', (req, res)=> {
     // swagger.tags=['Hello World']
